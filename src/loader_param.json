@@ -1,0 +1,118 @@
+{
+  "set1": {
+    "parameters": {
+      "filer_details": {
+        "filer": "172.30.16.185",
+        "filer_user": "admin",
+        "filer_password": "netapp1!",
+        "node_name": "knarendr31320201640-rg-ha1-vm1",
+        "aggr_name": "A1",
+        "disk_count": 1,
+        "vol_name": "vol_knarendr31320201640_rg_ha1_vm1_A1_test_load_2000_",
+        "vol_count": 10,
+        "vol_size": "50GB",
+        "use_existing_vol": 0,
+        "vserver_name": "svm_knarendr31320201640-cot-deployment",
+        "data_ip": "172.30.16.176"
+      },
+      "client_details": {
+        "clients": [
+          "172.30.16.193",
+          "172.30.16.190"
+        ],
+        "client_user": "root",
+        "client_password": "netapp1!",
+        "mount_path": "/load/loader/knarendr313202016404/",
+        "block_size": "4k",
+        "run_time": 259200
+      }
+    }
+  },
+  "set2": {
+    "parameters": {
+      "filer_details": {
+        "filer": "172.30.16.182",
+        "filer_user": "admin",
+        "filer_password": "netapp1!",
+        "node_name": "knarendr31320201640-rg-ha1-vm2",
+        "aggr_name": "B1",
+        "disk_count": 1,
+        "vol_name": "vol_knarendr31320201640_rg_ha1_vm2_B1_test_load_2000_",
+        "vol_count": 10,
+        "vol_size": "50GB",
+        "use_existing_vol": 0,
+        "vserver_name": "svm_knarendr31320201640-cot-deployment",
+        "data_ip": "172.30.16.177"
+      },
+      "client_details": {
+        "clients": [
+          "172.30.16.193",
+          "172.30.16.190"
+        ],
+        "client_user": "root",
+        "client_password": "netapp1!",
+        "mount_path": "/load/loader/knarendr31320201640/",
+        "block_size": "4k",
+        "run_time": 259200
+      }
+    }
+  },
+    "set3": {
+    "parameters": {
+      "filer_details": {
+        "filer": "172.30.16.185",
+        "filer_user": "admin",
+        "filer_password": "netapp1!",
+        "node_name": "knarendr31320201640-rg-ha1-vm1",
+        "aggr_name": "A2",
+        "disk_count": 1,
+        "vol_name": "vol_knarendr31320201640_rg_ha1_vm1_A2_test_load_2000_",
+        "vol_count": 10,
+        "vol_size": "50GB",
+        "use_existing_vol": 0,
+        "vserver_name": "svm_knarendr31320201640-cot-deployment",
+        "data_ip": "172.30.16.176"
+      },
+      "client_details": {
+        "clients": [
+          "172.30.16.193",
+          "172.30.16.190"
+        ],
+        "client_user": "root",
+        "client_password": "netapp1!",
+        "mount_path": "/load/loader/knarendr313202016404/",
+        "block_size": "4k",
+        "run_time": 259200
+      }
+    }
+  },
+  "set4": {
+    "parameters": {
+      "filer_details": {
+        "filer": "172.30.16.182",
+        "filer_user": "admin",
+        "filer_password": "netapp1!",
+        "node_name": "knarendr31320201640-rg-ha1-vm2",
+        "aggr_name": "B2",
+        "disk_count": 1,
+        "vol_name": "vol_knarendr31320201640_rg_ha1_vm2_B2_test_load_2000_",
+        "vol_count": 10,
+        "vol_size": "50GB",
+        "use_existing_vol": 0,
+        "vserver_name": "svm_knarendr31320201640-cot-deployment",
+        "data_ip": "172.30.16.177"
+      },
+      "client_details": {
+        "clients": [
+          "172.30.16.193",
+          "172.30.16.190"
+        ],
+        "client_user": "root",
+        "client_password": "netapp1!",
+        "mount_path": "/load/loader/knarendr31320201640/",
+        "block_size": "4k",
+        "run_time": 259200
+      }
+    }
+  }
+}

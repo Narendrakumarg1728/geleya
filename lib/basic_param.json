@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "filer_details": {
+      "filer": "172.30.16.14",
+      "filer_user": "admin",
+      "filer_password": "netapp1!"
+    },
+    "client_details": {
+      "clients": [
+        "172.30.16.35",
+        "172.30.16.36"
+      ],
+      "client_user": "root",
+      "client_password": "netapp1!"
+    }
+  }
+}

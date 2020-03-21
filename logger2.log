@@ -1,0 +1,42 @@
+INFO:root:##########
+Starting test_ssh_execute.py ##########
+
+INFO:root:##########ssh_cmd_executor##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.205. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.1)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: date ****##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.205. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.1)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: vserver show -type data -allowed-protocols nfs ****##########
+
+INFO:root:
+Last login time: 3/9/2020 15:19:36
+                               Admin      Operational Root
+Vserver     Type    Subtype    State      State       Volume     Aggregate
+----------- ------- ---------- ---------- ----------- ---------- ----------
+svm_knarendr23202018048-cot-deployment data default running
+                               running                root_svm_  A2
+                                                      knarendr23
+                                                      202018048_
+                                                      cot_
+                                                      deployment
+
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.205. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.1)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: vserver show -type data -allowed-protocols nfs ****##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.205. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.1)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: aggr show ****##########
+

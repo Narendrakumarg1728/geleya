@@ -1,0 +1,9 @@
+INFO:root:##########
+Starting test_ssh_execute.py ##########
+
+INFO:root:##########ssh_cmd_executor##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: diag and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Auth banner: b'Denied diag login request\n'

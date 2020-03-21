@@ -1,0 +1,27 @@
+{
+  "parameters": {
+    "filer_details": {
+      "filer": "172.30.16.64",
+      "filer_user": "admin",
+      "filer_password": "netapp1!",
+      "node_name": "knarendr1252020213529-rg-ha1-vm2",
+      "aggr_name": "B1",
+      "disk_count": 1,
+      "vol_name": "vol_B1_maxer_1000_",
+      "vol_count": 2,
+      "vol_size": "100GB",
+      "vserver_name": "svm_knarendr1252020213529-cot-deployment",
+      "data_ip": "172.30.16.59"
+    },
+    "client_details": {
+      "clients": ["172.30.16.125",
+                  "172.30.16.124"
+      ],
+      "client_user": "root",
+      "client_password": "netapp1!",
+      "mount_path": "/load/loader/test1234/",
+      "block_size": "4k",
+      "run_time": 259200
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "filer_A_ip": "",
+  "aggr_name": "A1",
+  "volume_name": "vol_A1"
+"clients": ["172.30.16.212", "172.30.16.213"],
+  "passwords": ["netapp1!", "netapp"]
+
+
+}

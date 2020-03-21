@@ -1,0 +1,54 @@
+INFO:root:##########
+Starting test_ssh_execute.py ##########
+
+INFO:root:##########ssh_cmd_executor##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.127. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.1)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: date ****##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.127. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.1)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: vserver show -type data -allowed-protocols nfs ****##########
+
+INFO:root:
+Last login time: 3/15/2020 22:44:52
+                               Admin      Operational Root
+Vserver     Type    Subtype    State      State       Volume     Aggregate
+----------- ------- ---------- ---------- ----------- ---------- ----------
+svm_knarendr3102020171115-cot-deployment data default running
+                               running                root_svm_  aggr1
+                                                      knarendr31
+                                                      0202017111
+                                                      5_cot_
+                                                      deployment
+
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.127. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.1)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: vserver show -type data -allowed-protocols nfs ****##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.127. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.1)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: event log show -event *unsynchronized* -time >10m ****##########
+
+INFO:root:
+Last login time: 3/15/2020 22:44:55
+There are no entries matching your query.
+
+
+INFO:root:Grepping for pattern
+INFO:root:Checking line:
+INFO:root:Checking line:Last login time: 3/15/2020 22:44:55
+INFO:root:Checking line:There are no entries matching your query.
+INFO:root:Checking line:
+INFO:root:Checking line:
+INFO:root:No unsync log in the event logs

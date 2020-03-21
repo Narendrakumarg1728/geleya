@@ -1,0 +1,137 @@
+INFO:root:##########
+Starting test_ssh_execute.py ##########
+
+INFO:root:##########ssh_cmd_executor##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: date ****##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: vserver show -type data -allowed-protocols nfs ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:48:33
+                               Admin      Operational Root
+Vserver     Type    Subtype    State      State       Volume     Aggregate
+----------- ------- ---------- ---------- ----------- ---------- ----------
+svm_knarendr3162020134758-cot-deployment data default running
+                               running                root_svm_  aggr1
+                                                      knarendr31
+                                                      6202013475
+                                                      8_cot_
+                                                      deployment
+
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: vserver show -type data -allowed-protocols nfs ****##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: network interface show -address 172.30.16.113 -fields curr-node ****##########
+
+INFO:root:['Last', 'login', 'time:', '3/17/2020', '19:48:36', 'vserver', 'lif', 'curr-node', '------------------------------------', '--------------------------------------', '--------------------------------', 'knarendr3162020134758-cot-deployment', 'knarendr3162020134758-rg-ha1-vm2_mgmt1', 'knarendr3162020134758-rg-ha1-vm2']
+INFO:root:##########ssh_cmd_executor##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: date ****##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: vserver show -type data -allowed-protocols nfs ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:48:39
+                               Admin      Operational Root
+Vserver     Type    Subtype    State      State       Volume     Aggregate
+----------- ------- ---------- ---------- ----------- ---------- ----------
+svm_knarendr3162020134758-cot-deployment data default running
+                               running                root_svm_  aggr1
+                                                      knarendr31
+                                                      6202013475
+                                                      8_cot_
+                                                      deployment
+
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: vserver show -type data -allowed-protocols nfs ****##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: network interface show -address 172.30.16.116 -fields curr-node ****##########
+
+INFO:root:['Last', 'login', 'time:', '3/17/2020', '19:48:42', 'vserver', 'lif', 'curr-node', '------------------------------------', '--------------------------------------', '--------------------------------', 'knarendr3162020134758-cot-deployment', 'knarendr3162020134758-rg-ha1-vm1_mgmt1', 'knarendr3162020134758-rg-ha1-vm1']
+INFO:root:Starting promoted to nightly build upgrade changes.
+INFO:root:systemshell -node knarendr3162020134758-rg-ha1-vm2 -command ls -l /var/etc/*pem
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: systemshell -node knarendr3162020134758-rg-ha1-vm2 -command ls -l /var/etc/*pem ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:48:43
+
+Error: "systemshell" is not a recognized command
+
+
+INFO:root:systemshell -node knarendr3162020134758-rg-ha1-vm2 -command sudo mkdir /var/etc/tmp
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: systemshell -node knarendr3162020134758-rg-ha1-vm2 -command sudo mkdir /var/etc/tmp ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:48:45
+
+Error: "systemshell" is not a recognized command
+
+
+INFO:root:Starting promoted to nightly build upgrade changes.
+INFO:root:systemshell -node knarendr3162020134758-rg-ha1-vm1 -command ls -l /var/etc/*pem
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: systemshell -node knarendr3162020134758-rg-ha1-vm1 -command ls -l /var/etc/*pem ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:48:46
+
+Error: "systemshell" is not a recognized command
+
+
+INFO:root:systemshell -node knarendr3162020134758-rg-ha1-vm1 -command sudo mkdir /var/etc/tmp
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: systemshell -node knarendr3162020134758-rg-ha1-vm1 -command sudo mkdir /var/etc/tmp ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:48:48
+
+Error: "systemshell" is not a recognized command
+
+

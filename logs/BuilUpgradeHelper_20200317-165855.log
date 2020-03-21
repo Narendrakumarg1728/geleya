@@ -1,0 +1,367 @@
+INFO:root:##########
+Starting test_ssh_execute.py ##########
+
+INFO:root:##########ssh_cmd_executor##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: date ****##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: vserver show -type data -allowed-protocols nfs ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:58:58
+                               Admin      Operational Root
+Vserver     Type    Subtype    State      State       Volume     Aggregate
+----------- ------- ---------- ---------- ----------- ---------- ----------
+svm_knarendr3162020134758-cot-deployment data default running
+                               running                root_svm_  aggr1
+                                                      knarendr31
+                                                      6202013475
+                                                      8_cot_
+                                                      deployment
+
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: vserver show -type data -allowed-protocols nfs ****##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: network interface show -address 172.30.16.113 -fields curr-node ****##########
+
+INFO:root:['Last', 'login', 'time:', '3/17/2020', '19:59:01', 'vserver', 'lif', 'curr-node', '------------------------------------', '--------------------------------------', '--------------------------------', 'knarendr3162020134758-cot-deployment', 'knarendr3162020134758-rg-ha1-vm2_mgmt1', 'knarendr3162020134758-rg-ha1-vm2']
+INFO:root:##########ssh_cmd_executor##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: date ****##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: vserver show -type data -allowed-protocols nfs ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:05
+                               Admin      Operational Root
+Vserver     Type    Subtype    State      State       Volume     Aggregate
+----------- ------- ---------- ---------- ----------- ---------- ----------
+svm_knarendr3162020134758-cot-deployment data default running
+                               running                root_svm_  aggr1
+                                                      knarendr31
+                                                      6202013475
+                                                      8_cot_
+                                                      deployment
+
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: vserver show -type data -allowed-protocols nfs ****##########
+
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: network interface show -address 172.30.16.116 -fields curr-node ****##########
+
+INFO:root:['Last', 'login', 'time:', '3/17/2020', '19:59:08', 'vserver', 'lif', 'curr-node', '------------------------------------', '--------------------------------------', '--------------------------------', 'knarendr3162020134758-cot-deployment', 'knarendr3162020134758-rg-ha1-vm1_mgmt1', 'knarendr3162020134758-rg-ha1-vm1']
+INFO:root:Starting promoted to nightly build upgrade changes.
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command ls -l /var/etc/*pem
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command ls -l /var/etc/*pem ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:10
+
+  (system node systemshell)
+-r--r--r--  1 root  wheel  1464 Jan 23 23:11 /var/etc/csc-dev-chain-cshm-nod.pem
+-r--r--r--  1 root  wheel  1432 Jan 23 23:11 /var/etc/csc-dev-chain-plat-svc.pem
+-r--r--r--  1 root  wheel  1428 Jan 23 23:11 /var/etc/csc-dev-cshm-nod.pem
+-r--r--r--  1 root  wheel  1391 Jan 23 23:11 /var/etc/csc-dev-plat-svc.pem
+-r--r--r--  1 root  wheel  1460 Jan 23 23:11 /var/etc/csc-development-chain.pem
+-r--r--r--  1 root  wheel  1419 Jan 23 23:11 /var/etc/csc-development.pem
+-r--r--r--  1 root  wheel  3450 Jan 23 23:11 /var/etc/csc-prod-chain-cshm-nod.pem
+-r--r--r--  1 root  wheel  3422 Jan 23 23:11 /var/etc/csc-prod-chain-plat-svc.pem
+-r--r--r--  1 root  wheel  1983 Jan 23 23:11 /var/etc/csc-prod-cshm-nod.pem
+-r--r--r--  1 root  wheel  1833 Jan 23 23:11 /var/etc/csc-prod-plat-svc.pem
+-r--r--r--  1 root  wheel  3422 Jan 23 23:11 /var/etc/csc-production-chain.pem
+-r--r--r--  1 root  wheel  1828 Jan 23 23:11 /var/etc/csc-production.pem
+-r--r--r--  1 root  wheel  1432 Jan 23 23:11 /var/etc/tsa-dev-chain-plat-svc.pem
+-r--r--r--  1 root  wheel  1379 Jan 23 23:11 /var/etc/tsa-dev-plat-svc.pem
+-r--r--r--  1 root  wheel  1460 Jan 23 23:11 /var/etc/tsa-development-chain.pem
+-r--r--r--  1 root  wheel  1403 Jan 23 23:11 /var/etc/tsa-development.pem
+-r--r--r--  1 root  wheel  3382 Jan 23 23:11 /var/etc/tsa-prod-chain-plat-svc.pem
+-r--r--r--  1 root  wheel  1768 Jan 23 23:11 /var/etc/tsa-prod-plat-svc.pem
+-r--r--r--  1 root  wheel  3323 Jan 23 23:11 /var/etc/tsa-production-chain.pem
+-r--r--r--  1 root  wheel  1740 Jan 23 23:11 /var/etc/tsa-production.pem
+
+
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command sudo mkdir /var/etc/tmp
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command sudo mkdir /var/etc/tmp ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:11
+
+  (system node systemshell)
+mkdir: /var/etc/tmp: File exists
+
+
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command sudo cp /var/etc/*pem /var/etc/tmp/
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command sudo cp /var/etc/*pem /var/etc/tmp/ ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:13
+
+  (system node systemshell)
+
+
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command ls /var/etc/*devel*pem
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command ls /var/etc/*devel*pem ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:15
+
+  (system node systemshell)
+/var/etc/csc-development-chain.pem	/var/etc/tsa-development-chain.pem
+/var/etc/csc-development.pem		/var/etc/tsa-development.pem
+
+
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command sudo mv /var/etc/csc-development-chain.pem /var/etc/csc-production-chain.pem
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command sudo mv /var/etc/csc-development-chain.pem /var/etc/csc-production-chain.pem ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:18
+
+  (system node systemshell)
+
+
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command sudo mv /var/etc/csc-development.pem /var/etc/csc-production.pem
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command sudo mv /var/etc/csc-development.pem /var/etc/csc-production.pem ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:20
+
+  (system node systemshell)
+
+
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command sudo mv /var/etc/tsa-development-chain.pem /var/etc/tsa-production-chain.pem
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command sudo mv /var/etc/tsa-development-chain.pem /var/etc/tsa-production-chain.pem ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:21
+
+  (system node systemshell)
+
+
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command sudo mv /var/etc/tsa-development.pem /var/etc/tsa-production.pem
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command sudo mv /var/etc/tsa-development.pem /var/etc/tsa-production.pem ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:24
+
+  (system node systemshell)
+
+
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command ls /var/etc/*devel*pem
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.113. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm2 -command ls /var/etc/*devel*pem ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:26
+
+  (system node systemshell)
+ls: No match.
+
+
+INFO:root:Starting promoted to nightly build upgrade changes.
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command ls -l /var/etc/*pem
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command ls -l /var/etc/*pem ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:28
+
+  (system node systemshell)
+-r--r--r--  1 root  wheel  1464 Jan 23 23:11 /var/etc/csc-dev-chain-cshm-nod.pem
+-r--r--r--  1 root  wheel  1432 Jan 23 23:11 /var/etc/csc-dev-chain-plat-svc.pem
+-r--r--r--  1 root  wheel  1428 Jan 23 23:11 /var/etc/csc-dev-cshm-nod.pem
+-r--r--r--  1 root  wheel  1391 Jan 23 23:11 /var/etc/csc-dev-plat-svc.pem
+-r--r--r--  1 root  wheel  1460 Jan 23 23:11 /var/etc/csc-development-chain.pem
+-r--r--r--  1 root  wheel  1419 Jan 23 23:11 /var/etc/csc-development.pem
+-r--r--r--  1 root  wheel  3450 Jan 23 23:11 /var/etc/csc-prod-chain-cshm-nod.pem
+-r--r--r--  1 root  wheel  3422 Jan 23 23:11 /var/etc/csc-prod-chain-plat-svc.pem
+-r--r--r--  1 root  wheel  1983 Jan 23 23:11 /var/etc/csc-prod-cshm-nod.pem
+-r--r--r--  1 root  wheel  1833 Jan 23 23:11 /var/etc/csc-prod-plat-svc.pem
+-r--r--r--  1 root  wheel  3422 Jan 23 23:11 /var/etc/csc-production-chain.pem
+-r--r--r--  1 root  wheel  1828 Jan 23 23:11 /var/etc/csc-production.pem
+-r--r--r--  1 root  wheel  1432 Jan 23 23:11 /var/etc/tsa-dev-chain-plat-svc.pem
+-r--r--r--  1 root  wheel  1379 Jan 23 23:11 /var/etc/tsa-dev-plat-svc.pem
+-r--r--r--  1 root  wheel  1460 Jan 23 23:11 /var/etc/tsa-development-chain.pem
+-r--r--r--  1 root  wheel  1403 Jan 23 23:11 /var/etc/tsa-development.pem
+-r--r--r--  1 root  wheel  3382 Jan 23 23:11 /var/etc/tsa-prod-chain-plat-svc.pem
+-r--r--r--  1 root  wheel  1768 Jan 23 23:11 /var/etc/tsa-prod-plat-svc.pem
+-r--r--r--  1 root  wheel  3323 Jan 23 23:11 /var/etc/tsa-production-chain.pem
+-r--r--r--  1 root  wheel  1740 Jan 23 23:11 /var/etc/tsa-production.pem
+
+
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command sudo mkdir /var/etc/tmp
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command sudo mkdir /var/etc/tmp ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:30
+
+  (system node systemshell)
+mkdir: /var/etc/tmp: File exists
+
+
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command sudo cp /var/etc/*pem /var/etc/tmp/
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command sudo cp /var/etc/*pem /var/etc/tmp/ ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:31
+
+  (system node systemshell)
+
+
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command ls /var/etc/*devel*pem
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command ls /var/etc/*devel*pem ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:33
+
+  (system node systemshell)
+/var/etc/csc-development-chain.pem	/var/etc/tsa-development-chain.pem
+/var/etc/csc-development.pem		/var/etc/tsa-development.pem
+
+
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command sudo mv /var/etc/csc-development-chain.pem /var/etc/csc-production-chain.pem
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command sudo mv /var/etc/csc-development-chain.pem /var/etc/csc-production-chain.pem ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:35
+
+  (system node systemshell)
+
+
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command sudo mv /var/etc/csc-development.pem /var/etc/csc-production.pem
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command sudo mv /var/etc/csc-development.pem /var/etc/csc-production.pem ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:37
+
+  (system node systemshell)
+
+
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command sudo mv /var/etc/tsa-development-chain.pem /var/etc/tsa-production-chain.pem
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command sudo mv /var/etc/tsa-development-chain.pem /var/etc/tsa-production-chain.pem ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:39
+
+  (system node systemshell)
+
+
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command sudo mv /var/etc/tsa-development.pem /var/etc/tsa-production.pem
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command sudo mv /var/etc/tsa-development.pem /var/etc/tsa-production.pem ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:40
+
+  (system node systemshell)
+
+
+INFO:root:set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command ls /var/etc/*devel*pem
+INFO:root:##########****     Creating ssh connection to Machine: 172.30.16.116. With Username: admin and password: netapp1! ****##########
+
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_7.2)
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:root:##########****     Executing command: set diag -confirmations off ;systemshell -node knarendr3162020134758-rg-ha1-vm1 -command ls /var/etc/*devel*pem ****##########
+
+INFO:root:
+Last login time: 3/17/2020 19:59:42
+
+  (system node systemshell)
+ls: No match.
+
+
